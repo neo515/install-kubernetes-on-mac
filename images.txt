@@ -1,0 +1,13 @@
+images_kube=(
+kube-apiserver:v1.16.5
+kube-controller-manager:v1.16.5
+kube-scheduler:v1.16.5
+kube-proxy:v1.16.5
+)
+
+
+images_other=(
+pause:3.1
+etcd:3.3.15-0
+coredns:1.6.2
+)
