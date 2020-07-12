@@ -6,13 +6,13 @@
 
 然而,官方的安装方式有没有提供使用第三方镜像地址的途径, 而且文档上也没有给出要使用的镜像的列表,无疑加大了开启的难度.
 
-那么,我们要如何解决呢?  
+那么,我们要如何解决呢?
 
 #### #1 下载docker-desktop安装包,并安装
 
 分为`stable(v2.3.0.3)`和`edge(v2.3.3.0)` ,截止到2020-07-12
 
-下载地址（固定）: 
+下载地址（固定）:
 
  stable还是edge,根据自己喜好即可
 
@@ -22,7 +22,7 @@ https://download.docker.com/mac/edge/Docker.dmg    #edge版
 
 安装后,点击顶部状态栏上的小蓝鲸图标,查看版本(about Docker Desktop)
 
-<img src="./pics/image-20200712231010038.png" alt="image-20200712231010038" style="zoom:50%;" />
+<img src="https://github.com/neo515/install-kubernetes-on-mac/raw/master/pics/image-20200712231010038.png" alt="image-20200712231010038" style="zoom:50%;" />
 
 #### #2 准备镜像
 
@@ -48,9 +48,9 @@ bash pull_images.sh
 ```
 #### #3 开启docker desktop的kubernetes
 
-<img src="pics/image-20200712235051688.png" alt="image-20200712235051688" style="zoom:50%;" />
+<img src="https://github.com/neo515/install-kubernetes-on-mac/raw/master/pics/image-20200712235051688.png" alt="image-20200712235051688" style="zoom:50%;" />
 
-开启后, 将发现kubernetes的状态将是是starting...中的, 这是因为还缺少镜像. 
+开启后, 将发现kubernetes的状态将是是starting...中的, 这是因为还缺少镜像.
 
 虽然没有成功, 但是日志里输出了下载失败的镜像的版本号. 有了版本号,就可以找到镜像了.
 
@@ -74,7 +74,7 @@ pulling image \"k8s.gcr.io/etcd:3.3.15-0\""
 pulling image \"k8s.gcr.io/pause:3.1\": Error response from daemon: Get https://k8s.gcr.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"
 ```
 
-<img src="pics/image-20200713001805047.png" alt="image-20200713001805047" style="zoom:100%;" />
+<img src="https://github.com/neo515/install-kubernetes-on-mac/raw/master/pics/image-20200713001805047.png" alt="image-20200713001805047" style="zoom:100%;" />
 
 // 由于笔者曾经安装过其他版本的k8s,所以上图的日志中etcd、coredns显示了多个版本.如果你是第一次部署,应该只有一个.
 
