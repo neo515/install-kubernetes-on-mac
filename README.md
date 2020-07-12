@@ -17,6 +17,7 @@
  stable还是edge,根据自己喜好即可
 
 https://download.docker.com/mac/stable/Docker.dmg  #stable版
+
 https://download.docker.com/mac/edge/Docker.dmg    #edge版
 
 安装后,点击顶部状态栏上的小蓝鲸图标,查看版本(about Docker Desktop)
