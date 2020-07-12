@@ -79,15 +79,14 @@ pulling image \"k8s.gcr.io/pause:3.1\": Error response from daemon: Get https://
 // 由于笔者曾经安装过其他版本的k8s,所以上图的日志中etcd、coredns显示了多个版本.如果你是第一次部署,应该只有一个.
 
 - 修改images.txt中的images_other变量
-
+```
 根据查找到版本号对应修改
-
 images_other=(
 pause:3.1
 etcd:3.3.15-0
 coredns:1.6.2
 )
-
+```
 - 拉取缺失的镜像
 
 ```
