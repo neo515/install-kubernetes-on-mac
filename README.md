@@ -76,7 +76,7 @@ pulling image \"k8s.gcr.io/pause:3.1\": Error response from daemon: Get https://
 
 <img src="https://note.youdao.com/yws/public/resource/bf8752018b5bf8e4d9b8185e121cbddb/xmlnote/A3FD818BA1494D9A820C71C81181A8B0/12772" alt="image-20200713001805047" style="zoom:90%;" />
 
-<img src="https://github.com/neo515/install-kubernetes-on-mac/blob/master/pics/image-20200713001805047.png" alt="image-20200713001805047" style="zoom:90%;" />
+<img src="https://note.youdao.com/yws/public/resource/bf8752018b5bf8e4d9b8185e121cbddb/xmlnote/B304D9375C9D427ABB05294295685EE1/12775" alt="image-20200713001805047" style="zoom:90%;" />
 
 `https://github.com/neo515/install-kubernetes-on-mac/blob/master/pics/image-20200713001805047.png`
 
