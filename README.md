@@ -22,7 +22,7 @@ https://download.docker.com/mac/edge/Docker.dmg    #edge版
 
 安装后,点击顶部状态栏上的小蓝鲸图标,查看版本(about Docker Desktop)
 
-<img src="https://github.com/neo515/install-kubernetes-on-mac/raw/master/pics/image-20200712231010038.png" alt="image-20200712231010038" style="zoom:50%;" />
+<img src="https://note.youdao.com/yws/public/resource/bf8752018b5bf8e4d9b8185e121cbddb/xmlnote/30260C0367044C1C9C0AFF04BADDA727/12771" alt="image-20200712231010038" style="zoom:50%;" />
 
 #### #2 准备镜像
 
@@ -48,7 +48,7 @@ bash pull_images.sh
 ```
 #### #3 开启docker desktop的kubernetes
 
-<img src="https://github.com/neo515/install-kubernetes-on-mac/raw/master/pics/image-20200712235051688.png" alt="image-20200712235051688" style="zoom:50%;" />
+<img src="https://note.youdao.com/yws/public/resource/bf8752018b5bf8e4d9b8185e121cbddb/xmlnote/32BD0E3A398F468F840CCFFED61A2030/12770" alt="image-20200712235051688" style="zoom:50%;" />
 
 开启后, 将发现kubernetes的状态将是是starting...中的, 这是因为还缺少镜像.
 
@@ -74,7 +74,7 @@ pulling image \"k8s.gcr.io/etcd:3.3.15-0\""
 pulling image \"k8s.gcr.io/pause:3.1\": Error response from daemon: Get https://k8s.gcr.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"
 ```
 
-<img src="https://github.com/neo515/install-kubernetes-on-mac/raw/master/pics/image-20200713001805047.png" alt="image-20200713001805047" style="zoom:100%;" />
+<img src="https://note.youdao.com/yws/public/resource/bf8752018b5bf8e4d9b8185e121cbddb/xmlnote/A3FD818BA1494D9A820C71C81181A8B0/12772" alt="image-20200713001805047" style="zoom:100%;" />
 
 // 由于笔者曾经安装过其他版本的k8s,所以上图的日志中etcd、coredns显示了多个版本.如果你是第一次部署,应该只有一个.
 
