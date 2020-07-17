@@ -74,11 +74,9 @@ pulling image \"k8s.gcr.io/etcd:3.3.15-0\""
 pulling image \"k8s.gcr.io/pause:3.1\": Error response from daemon: Get https://k8s.gcr.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"
 ```
 
-<img src="https://note.youdao.com/yws/public/resource/bf8752018b5bf8e4d9b8185e121cbddb/xmlnote/A3FD818BA1494D9A820C71C81181A8B0/12772" alt="image-20200713001805047" style="zoom:90%;" />
+<img src="https://note.youdao.com/yws/public/resource/bf8752018b5bf8e4d9b8185e121cbddb/xmlnote/B304D9375C9D427ABB05294295685EE1/12775" alt="image-20200713001805047" style="zoom:100%;" />
 
-<img src="https://note.youdao.com/yws/public/resource/bf8752018b5bf8e4d9b8185e121cbddb/xmlnote/B304D9375C9D427ABB05294295685EE1/12775" alt="image-20200713001805047" style="zoom:90%;" />
-
-`https://github.com/neo515/install-kubernetes-on-mac/blob/master/pics/image-20200713001805047.png`
+`ps: github的图片处理看起来是出了问题, 如果图片无法正常打开,请手动复制连接打开, https://note.youdao.com/yws/public/resource/bf8752018b5bf8e4d9b8185e121cbddb/xmlnote/B304D9375C9D427ABB05294295685EE1/12775 `
 
 
 // 由于笔者曾经安装过其他版本的k8s,所以上图的日志中etcd、coredns显示了多个版本.如果你是第一次部署,应该只有一个.
