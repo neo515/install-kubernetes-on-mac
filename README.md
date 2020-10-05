@@ -68,8 +68,8 @@ k8s虽然是没有成功, 但是日志里是有输出下载失败的镜像的地
 
 - a. 执行脚本或命令 查看日志确认版本
 
-`cat ~/Library/Containers/com.docker.docker/Data/log/vm/kubelet.log*|grep 'pulling image.*' -o |sort|uniq|grep -v 'k8s.gcr.io/kube-'`
-或
+`cat ~/Library/Containers/com.docker.docker/Data/log/vm/kubelet.log*|grep 'pulling image.*' -o |sort|uniq|grep -v 'k8s.gcr.io/kube-'`  
+或  
 `bash get_other_image_url.sh`
 
 ```
@@ -115,5 +115,5 @@ $ kubectl get nodes
 
 如果有其他的问题,可以提issue, 看到后会第一时间回复, 或者添加如下微信交流群.
 
-<img src="https://raw.githubusercontent.com/neo515/install-kubernetes-on-mac/master/pics/WechatIMG5.jpeg" alt="wechat交流群" style="zoom:20%;" />
+<img src="https://raw.githubusercontent.com/neo515/install-kubernetes-on-mac/master/pics/WechatIMG5.jpeg" alt="wechat交流群" style="zoom:30%;" />
 
