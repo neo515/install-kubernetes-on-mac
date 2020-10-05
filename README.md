@@ -73,14 +73,12 @@ k8s虽然是没有成功, 但是日志里是有输出下载失败的镜像的地
 `bash get_other_image_url.sh`
 
 ```
-cat ~/Library/Containers/com.docker.docker/Data/log/vm/kubelet.log*|grep 'pulling image.*' -o |sort|uniq|grep -v 'k8s.gcr.io/kube-'|grep '8s.gcr.io'
+cat ~/Library/Containers/com.docker.docker/Data/log/vm/kubelet.log*|grep 'pulling image.*' -o |sort|uniq|grep -v 'k8s.gcr.io/kube-'|grep 'k8s.gcr.io'
 或者执行脚本
 bash get_other_image_url.sh
 
 ==>
 pulling image "k8s.gcr.io/pause:3.1": Error response from daemon: Get https://k8s.gcr.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
-pulling image \"docker/desktop-storage-provisioner:v1.0\""
-pulling image \"docker/kube-compose-controller:v0.4.23\""
 pulling image \"k8s.gcr.io/coredns:1.6.2\""
 pulling image \"k8s.gcr.io/etcd:3.3.15-0\""
 pulling image \"k8s.gcr.io/pause:3.1\": Error response from daemon: Get https://k8s.gcr.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"
@@ -114,6 +112,6 @@ $ kubectl get nodes
 ### #6 最后
 
 如果有其他的问题,可以提issue, 看到后会第一时间回复, 或者添加如下微信交流群.
-
+> 199.232.68.133 raw.githubusercontent.com  #写入hosts文件使github图片能正常显示出来  
 <img src="https://raw.githubusercontent.com/neo515/install-kubernetes-on-mac/master/pics/WechatIMG5.jpeg" alt="wechat交流群" style="zoom:30%;" />
 
