@@ -1,7 +1,8 @@
 source images.txt
 gcr_url=k8s.gcr.io
 
-pull_url=gotok8s
+# pull_url=gotok8s
+pull_url=registry.cn-hangzhou.aliyuncs.com/google_containers
 
 for name in ${images_kube[@]};do
     gcr_img_url=${gcr_url}/$name
