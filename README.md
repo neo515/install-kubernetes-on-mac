@@ -15,8 +15,8 @@
 ├── images-1.16.5.txt      #1.16.5版本号,不用更改,仅做参考
 ├── images-1.18.8.txt      #1.18.5版本号,不用更改,仅做参考
 ├── images.txt             #脚本拉取镜像,定义版本号的地方
-├── pull_images.sh         #拉取k8s各组件的脚本,按文档操作
-└── pull_images_other.sh   #拉取k8s其他组件的脚本,按文档操作
+├── pull_images.sh         #拉取k8s自身组件的脚本,按文档操作
+└── pull_images_other.sh   #拉取k8s外部组件的脚本(coredns等),按文档操作
 ```
 
 由于众所周知的原因,当我们在docker desktop上开启kubernetes时, kubernetes的状态可能一直是starting,如果你也有这样的问题,那就是来对地方了, 请往下看
@@ -46,6 +46,9 @@ https://download.docker.com/mac/edge/Docker.dmg    #edge版
 <img src="https://note.youdao.com/yws/public/resource/bf8752018b5bf8e4d9b8185e121cbddb/xmlnote/30260C0367044C1C9C0AFF04BADDA727/12771" alt="image-20200712231010038" style="zoom:50%;" />
 
 ### #2 准备镜像
+镜像分为2部分:   //这里采取分步拉取   
+1. k8s自身组件: 和k8s的版本高度保持一致,如apiserver的版本    
+2. k8s外部组件: 如果docker desktop升级了小版本,外部组件版本可能会变化   
 
 - 修改`images.txt`中的版本号和k8s的版本一致
 
